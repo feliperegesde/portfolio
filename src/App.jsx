@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 export default function App() {
   const [lang, setLang] = useState('PT');
+  const [darkMode, setDarkMode] = useState(false);
 
   const t = {
     PT: {
@@ -14,7 +15,7 @@ export default function App() {
       heroDesc: "Graduando em Ciência da Computação pela UFC com sólida experiência em desenvolvimento Full-Stack, Engenharia de Dados e Machine Learning.",
       btnProjects: "Ver projetos",
       btnContact: "Entrar em contato",
-      lab: "LABORATÓRIO DE SOFTWARE",
+      lab: "Dev and Machine learning engineer",
       loc1: "FORTALEZA, CEARÁ",
       loc2: "BRASIL",
       sec1Title: "Desenvolvimento de alta performance com rigor técnico.",
@@ -30,8 +31,6 @@ export default function App() {
           subtitle: "Automação e Dados",
           description: "Pipeline automatizado de multi-fontes para raspagem de dados de emprego em Python com Playwright, processamento em Pandas e interface interativa em Streamlit.",
           tags: ["Python", "Playwright", "Pandas", "Streamlit"],
-          bg: "bg-blue-50/60 border-blue-100",
-          badgeBg: "bg-blue-600 text-white",
           link: "https://github.com/feliperegesde/job-market-pipeline"
         },
         {
@@ -40,8 +39,6 @@ export default function App() {
           subtitle: "Inteligência Artificial & Saúde",
           description: "Pesquisa e desenvolvimento em Internet of Health Things (IoHT), integrando biometria, mensageria assíncrona via RabbitMQ e modelos preditivos em XGBoost.",
           tags: ["Python", "XGBoost", "RabbitMQ", "FastAPI"],
-          bg: "bg-emerald-50/60 border-emerald-100",
-          badgeBg: "bg-emerald-700 text-white",
           link: "https://github.com/feliperegesde"
         },
         {
@@ -50,8 +47,6 @@ export default function App() {
           subtitle: "Arquitetura de Dados & Cloud",
           description: "Arquitetura desacoplada na AWS utilizando mensageria SQS/SNS, workers em EC2, armazenamento em S3 e auditoria CRUD em DynamoDB para datasets analíticos.",
           tags: ["AWS", "SQS/SNS", "DynamoDB", "Python", "S3"],
-          bg: "bg-amber-50/60 border-amber-100",
-          badgeBg: "bg-amber-700 text-white",
           link: "https://github.com/feliperegesde/multi-agent-rag-eval"
         },
         {
@@ -60,8 +55,6 @@ export default function App() {
           subtitle: "APIs & NLP",
           description: "API backend de escuta social e análise de sentimento em redes sociais desenvolvida em FastAPI, Uvicorn e Python para processamento de streaming de texto.",
           tags: ["FastAPI", "Python", "NLP", "Uvicorn"],
-          bg: "bg-rose-50/60 border-rose-100",
-          badgeBg: "bg-rose-800 text-white",
           link: "https://github.com/feliperegesde/Social-Radar-AI-ou-Social-Listening-ML-Bot-"
         }
       ],
@@ -94,7 +87,7 @@ export default function App() {
           role: "Estagiário Full Stack (Projeto LTAD / Lenovo)",
           company: "LSBD / UFC",
           period: "03/2025 – 09/2025",
-          description: "Manutenção e engenharia de software para os dispositivos ThinkSmart Hub da Lenovo, atuando no Back-end e Front-end com TypeScript, CSS e C++[cite: 9, 10]."
+          description: "Manutenção e engenharia de software para os dispositivos ThinkSmart Hub da Lenovo, atuando no Back-end e Front-end com TypeScript, CSS e C++."
         }
       ],
       secCertsTag: "04 / CERTIFICAÇÕES",
@@ -103,7 +96,7 @@ export default function App() {
         {
           title: "Fundamentals of Deep Learning",
           issuer: "Nvidia",
-          description: "Capacitação oficial em Deep Learning com foco em PyTorch, TensorFlow e Python[cite: 10]."
+          description: "Capacitação oficial em Deep Learning com foco em PyTorch, TensorFlow e Python."
         },
         {
           title: "Formação Avançada em Desenvolvimento",
@@ -145,8 +138,6 @@ export default function App() {
           subtitle: "Automation & Data",
           description: "Automated multi-source pipeline for scraping job postings in Python with Playwright, Pandas processing, and an interactive Streamlit interface.",
           tags: ["Python", "Playwright", "Pandas", "Streamlit"],
-          bg: "bg-blue-50/60 border-blue-100",
-          badgeBg: "bg-blue-600 text-white",
           link: "https://github.com/feliperegesde/job-market-pipeline"
         },
         {
@@ -155,9 +146,7 @@ export default function App() {
           subtitle: "Artificial Intelligence & Health",
           description: "Research and development in Internet of Health Things (IoHT), integrating biometrics, asynchronous messaging via RabbitMQ, and XGBoost predictive models.",
           tags: ["Python", "XGBoost", "RabbitMQ", "FastAPI"],
-          bg: "bg-emerald-50/60 border-emerald-100",
-          badgeBg: "bg-emerald-700 text-white",
-          link: "https://github.com/felipe-albuquerque"
+          link: "https://github.com/feliperegesde"
         },
         {
           id: "03",
@@ -165,8 +154,6 @@ export default function App() {
           subtitle: "Data Architecture & Cloud",
           description: "Decoupled AWS architecture using SQS/SNS messaging, EC2 workers, S3 storage, and DynamoDB CRUD auditing for analytical datasets.",
           tags: ["AWS", "SQS/SNS", "DynamoDB", "Python", "S3"],
-          bg: "bg-amber-50/60 border-amber-100",
-          badgeBg: "bg-amber-700 text-white",
           link: "https://github.com/feliperegesde/multi-agent-rag-eval"
         },
         {
@@ -175,8 +162,6 @@ export default function App() {
           subtitle: "APIs & NLP",
           description: "Social listening and sentiment analysis backend API developed with FastAPI, Uvicorn, and Python for text streaming processing.",
           tags: ["FastAPI", "Python", "NLP", "Uvicorn"],
-          bg: "bg-rose-50/60 border-rose-100",
-          badgeBg: "bg-rose-800 text-white",
           link: "https://github.com/feliperegesde/Social-Radar-AI-ou-Social-Listening-ML-Bot-"
         }
       ],
@@ -209,7 +194,7 @@ export default function App() {
           role: "Full Stack Intern (LTAD Project / Lenovo)",
           company: "LSBD / UFC",
           period: "03/2025 – 09/2025",
-          description: "Software maintenance and engineering for Lenovo ThinkSmart Hub devices, working on both Back-end and Front-end using TypeScript, CSS, and C++[cite: 9, 10]."
+          description: "Software maintenance and engineering for Lenovo ThinkSmart Hub devices, working on both Back-end and Front-end using TypeScript, CSS, and C++."
         }
       ],
       secCertsTag: "04 / CERTIFICATIONS",
@@ -218,7 +203,7 @@ export default function App() {
         {
           title: "Fundamentals of Deep Learning",
           issuer: "Nvidia",
-          description: "Official Deep Learning certification focused on PyTorch, TensorFlow, and Python[cite: 10]."
+          description: "Official Deep Learning certification focused on PyTorch, TensorFlow, and Python."
         },
         {
           title: "Advanced Development Training",
@@ -248,41 +233,53 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FBFBFA] text-[#0F172A] font-sans selection:bg-blue-600 selection:text-white">
+    <div className={`min-h-screen font-sans transition-colors duration-300 ${darkMode ? 'bg-[#090D16] text-slate-100 selection:bg-blue-500 selection:text-white' : 'bg-[#FBFBFA] text-[#0F172A] selection:bg-blue-600 selection:text-white'}`}>
+      
       {/* Header / Navbar */}
-      <header className="fixed top-0 w-full bg-[#FBFBFA]/90 backdrop-blur-md border-b border-slate-200/60 z-50">
+      <header className={`fixed top-0 w-full backdrop-blur-md border-b z-50 transition-colors duration-300 ${darkMode ? 'bg-[#090D16]/90 border-slate-800' : 'bg-[#FBFBFA]/90 border-slate-200/60'}`}>
         <div className="w-full px-8 md:px-16 h-20 flex justify-between items-center max-w-[1600px] mx-auto">
           <a href="#" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-[#0F172A] text-white font-serif font-bold flex items-center justify-center rounded tracking-wider text-sm shadow-sm">
+            <div className={`w-10 h-10 font-serif font-bold flex items-center justify-center rounded tracking-wider text-sm shadow-sm transition-colors ${darkMode ? 'bg-slate-100 text-[#090D16]' : 'bg-[#0F172A] text-white'}`}>
               FA
             </div>
-            <span className="font-serif font-semibold tracking-tight text-lg text-slate-900">
+            <span className={`font-serif font-semibold tracking-tight text-lg ${darkMode ? 'text-slate-100' : 'text-slate-900'}`}>
               Felipe Albuquerque
             </span>
           </a>
 
-          <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-            <a href="#sobre" className="hover:text-slate-950 transition-colors">{current.nav.about}</a>
-            <a href="#projetos" className="hover:text-slate-950 transition-colors">{current.nav.projects}</a>
-            <a href="#experiencia" className="hover:text-slate-950 transition-colors">{current.nav.experience}</a>
-            <a href="#certificacoes" className="hover:text-slate-950 transition-colors">{current.nav.certs}</a>
-            <a href="#contato" className="hover:text-slate-950 transition-colors">{current.nav.contact}</a>
+          <nav className={`hidden md:flex items-center gap-8 text-sm font-medium ${darkMode ? 'text-slate-300' : 'text-slate-600'}`}>
+            <a href="#sobre" className={`transition-colors ${darkMode ? 'hover:text-white' : 'hover:text-slate-950'}`}>{current.nav.about}</a>
+            <a href="#projetos" className={`transition-colors ${darkMode ? 'hover:text-white' : 'hover:text-slate-950'}`}>{current.nav.projects}</a>
+            <a href="#experiencia" className={`transition-colors ${darkMode ? 'hover:text-white' : 'hover:text-slate-950'}`}>{current.nav.experience}</a>
+            <a href="#certificacoes" className={`transition-colors ${darkMode ? 'hover:text-white' : 'hover:text-slate-950'}`}>{current.nav.certs}</a>
+            <a href="#contato" className={`transition-colors ${darkMode ? 'hover:text-white' : 'hover:text-slate-950'}`}>{current.nav.contact}</a>
           </nav>
 
-          <div className="flex items-center gap-5 text-slate-700">
-            <a href="https://github.com/feliperegesde" target="_blank" rel="noreferrer" className="p-2 hover:text-blue-600 transition-colors" title="GitHub">
+          <div className="flex items-center gap-4">
+            <a href="https://github.com/feliperegesde" target="_blank" rel="noreferrer" className={`p-2 transition-colors ${darkMode ? 'text-slate-300 hover:text-blue-400' : 'text-slate-700 hover:text-blue-600'}`} title="GitHub">
               <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                 <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
               </svg>
             </a>
-            <a href="https://www.linkedin.com/in/felipe-albuquerque-66334b280" target="_blank" rel="noreferrer" className="p-2 hover:text-blue-600 transition-colors" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/felipe-albuquerque-66334b280" target="_blank" rel="noreferrer" className={`p-2 transition-colors ${darkMode ? 'text-slate-300 hover:text-blue-400' : 'text-slate-700 hover:text-blue-600'}`} title="LinkedIn">
               <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
               </svg>
             </a>
+            
+            {/* Dark/Light Mode Toggle */}
+            <button 
+              onClick={() => setDarkMode(!darkMode)} 
+              className={`p-2 rounded transition-colors text-xs font-mono font-semibold ${darkMode ? 'bg-slate-800 text-amber-400 hover:bg-slate-700' : 'bg-slate-200/70 text-slate-800 hover:bg-slate-300'}`}
+              title="Alternar Tema"
+            >
+              {darkMode ? '☀️' : '🌙'}
+            </button>
+
+            {/* Language Switcher */}
             <button 
               onClick={() => setLang(lang === 'PT' ? 'EN' : 'PT')} 
-              className="px-3 py-1 bg-slate-200/70 hover:bg-slate-300 text-xs font-mono font-semibold rounded transition-colors"
+              className={`px-3 py-1 text-xs font-mono font-semibold rounded transition-colors ${darkMode ? 'bg-slate-800 text-slate-200 hover:bg-slate-700' : 'bg-slate-200/70 text-slate-800 hover:bg-slate-300'}`}
             >
               {lang === 'PT' ? 'EN' : 'PT'}
             </button>
@@ -293,30 +290,30 @@ export default function App() {
       {/* Hero Section */}
       <section className="w-full px-8 md:px-16 pt-44 pb-28 max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
         <div className="lg:col-span-7 space-y-8">
-          <div className="inline-flex items-center gap-2 text-xs font-mono tracking-wide text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200/60">
+          <div className={`inline-flex items-center gap-2 text-xs font-mono tracking-wide px-3 py-1.5 rounded-full border ${darkMode ? 'bg-emerald-950/40 border-emerald-800/60 text-emerald-400' : 'bg-emerald-50 border-emerald-200/60 text-emerald-700'}`}>
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             {current.badge}
           </div>
           
           <div className="space-y-4">
-            <div className="text-xs font-mono tracking-widest text-blue-700 uppercase">
+            <div className={`text-xs font-mono tracking-widest uppercase ${darkMode ? 'text-blue-400' : 'text-blue-700'}`}>
               {current.subtitle}
             </div>
-            <h1 className="text-5xl sm:text-7xl font-serif font-normal tracking-tight text-slate-900 leading-[1.08]">
+            <h1 className={`text-5xl sm:text-7xl font-serif font-normal tracking-tight leading-[1.08] ${darkMode ? 'text-white' : 'text-slate-900'}`}>
               {current.heroTitleLine1} <br />
               <span className="italic font-light">{current.heroTitleName}</span> {current.heroTitleRest}
             </h1>
           </div>
 
-          <p className="text-lg text-slate-600 max-w-2xl leading-relaxed font-light">
+          <p className={`text-lg max-w-2xl leading-relaxed font-light ${darkMode ? 'text-slate-300' : 'text-slate-600'}`}>
             {current.heroDesc}
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <a href="#projetos" className="px-6 py-3.5 bg-[#0F172A] text-white rounded-lg font-medium hover:bg-slate-800 transition-all shadow-sm">
+            <a href="#projetos" className={`px-6 py-3.5 rounded-lg font-medium transition-all shadow-sm ${darkMode ? 'bg-slate-100 text-slate-900 hover:bg-white' : 'bg-[#0F172A] text-white hover:bg-slate-800'}`}>
               {current.btnProjects}
             </a>
-            <a href="#contato" className="px-6 py-3.5 bg-white border border-slate-300 text-slate-800 rounded-lg font-medium hover:bg-slate-50 transition-all">
+            <a href="#contato" className={`px-6 py-3.5 border rounded-lg font-medium transition-all ${darkMode ? 'bg-transparent border-slate-700 text-slate-200 hover:bg-slate-900' : 'bg-white border-slate-300 text-slate-800 hover:bg-slate-50'}`}>
               {current.btnContact}
             </a>
           </div>
@@ -324,7 +321,7 @@ export default function App() {
 
         {/* Hero Visual Card */}
         <div className="lg:col-span-5 flex justify-center">
-          <div className="w-full max-w-lg aspect-square bg-[#0B132B] rounded-2xl p-8 flex flex-col justify-between relative overflow-hidden shadow-2xl border border-slate-800">
+          <div className={`w-full max-w-lg aspect-square rounded-2xl p-8 flex flex-col justify-between relative overflow-hidden shadow-2xl border ${darkMode ? 'bg-[#0B132B]/80 border-slate-800' : 'bg-[#0B132B] border-slate-800'}`}>
             <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]"></div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 border border-slate-700/50 rounded-full"></div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-blue-500/30 rounded-full"></div>
@@ -346,25 +343,25 @@ export default function App() {
         </div>
       </section>
 
-      <div className="w-full px-8 md:px-16 max-w-[1600px] mx-auto"><hr className="border-slate-200" /></div>
+      <div className="w-full px-8 md:px-16 max-w-[1600px] mx-auto"><hr className={darkMode ? 'border-slate-800' : 'border-slate-200'} /></div>
 
       {/* Sobre Mim */}
       <section id="sobre" className="w-full px-8 md:px-16 py-32 max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         <div className="lg:col-span-7 space-y-6">
-          <span className="text-xs font-mono tracking-widest text-blue-700">01 / SOBRE</span>
-          <h2 className="text-4xl sm:text-5xl font-serif text-slate-900 tracking-tight leading-tight">
+          <span className={`text-xs font-mono tracking-widest ${darkMode ? 'text-blue-400' : 'text-blue-700'}`}>01 / SOBRE</span>
+          <h2 className={`text-4xl sm:text-5xl font-serif tracking-tight leading-tight ${darkMode ? 'text-white' : 'text-slate-900'}`}>
             {current.sec1Title}
           </h2>
-          <p className="text-slate-600 text-lg leading-relaxed font-light">
+          <p className={`text-lg leading-relaxed font-light ${darkMode ? 'text-slate-300' : 'text-slate-600'}`}>
             {current.sec1Desc}
           </p>
         </div>
 
         <div className="lg:col-span-5 space-y-4">
-          <span className="text-xs font-mono tracking-widest text-slate-500 uppercase">{current.techTitle}</span>
+          <span className="text-xs font-mono tracking-widest text-slate-400 uppercase">{current.techTitle}</span>
           <div className="flex flex-wrap gap-2.5 pt-2">
             {skills.map((tech, idx) => (
-              <span key={idx} className="px-4 py-2 bg-white border border-slate-200/80 rounded-md text-sm font-mono text-slate-700 shadow-2xs hover:border-blue-400 transition-colors">
+              <span key={idx} className={`px-4 py-2 border rounded-md text-sm font-mono transition-colors ${darkMode ? 'bg-slate-900/60 border-slate-800 text-slate-300 hover:border-blue-500' : 'bg-white border-slate-200/80 text-slate-700 hover:border-blue-400'}`}>
                 {tech}
               </span>
             ))}
@@ -372,57 +369,57 @@ export default function App() {
         </div>
       </section>
 
-      <div className="w-full px-8 md:px-16 max-w-[1600px] mx-auto"><hr className="border-slate-200" /></div>
+      <div className="w-full px-8 md:px-16 max-w-[1600px] mx-auto"><hr className={darkMode ? 'border-slate-800' : 'border-slate-200'} /></div>
 
       {/* Projetos em Destaque */}
       <section id="projetos" className="w-full px-8 md:px-16 py-32 max-w-[1600px] mx-auto space-y-16">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-4">
-            <span className="text-xs font-mono tracking-widest text-blue-700">{current.sec2Tag}</span>
-            <h2 className="text-4xl sm:text-5xl font-serif text-slate-900 tracking-tight">
+            <span className={`text-xs font-mono tracking-widest ${darkMode ? 'text-blue-400' : 'text-blue-700'}`}>{current.sec2Tag}</span>
+            <h2 className={`text-4xl sm:text-5xl font-serif tracking-tight ${darkMode ? 'text-white' : 'text-slate-900'}`}>
               {current.sec2Title}
             </h2>
           </div>
-          <p className="text-slate-600 max-w-sm text-sm font-light">
+          <p className={`max-w-sm text-sm font-light ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>
             {current.sec2Desc}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {current.projects.map((project, idx) => (
-            <div key={idx} className={`p-10 rounded-2xl border ${project.bg} flex flex-col justify-between space-y-8 transition-all hover:shadow-md`}>
+            <div key={idx} className={`p-10 rounded-2xl border flex flex-col justify-between space-y-8 transition-all ${darkMode ? 'bg-slate-900/40 border-slate-800 hover:border-slate-700' : 'bg-blue-50/40 border-blue-100/80 hover:shadow-md'}`}>
               <div className="space-y-6">
                 <div className="flex justify-between items-center">
-                  <span className="text-xs font-mono text-slate-500">{project.id}</span>
-                  <span className={`text-[10px] font-mono px-3 py-1 rounded-full ${project.badgeBg}`}>
+                  <span className="text-xs font-mono text-slate-400">{project.id}</span>
+                  <span className={`text-[10px] font-mono px-3 py-1 rounded-full ${darkMode ? 'bg-blue-900/60 text-blue-300 border border-blue-700/50' : 'bg-blue-600 text-white'}`}>
                     {project.subtitle}
                   </span>
                 </div>
 
                 <div className="py-6 flex justify-center">
-                  <div className="w-32 h-32 rounded-full bg-white/80 border border-slate-200 shadow-inner flex items-center justify-center relative">
-                    <div className="absolute inset-2 border border-slate-200/60 rounded-full"></div>
-                    <span className="font-serif font-bold text-xl text-slate-800 tracking-wider">
+                  <div className={`w-32 h-32 rounded-full border shadow-inner flex items-center justify-center relative ${darkMode ? 'bg-slate-900 border-slate-800' : 'bg-white/80 border-slate-200'}`}>
+                    <div className={`absolute inset-2 border rounded-full ${darkMode ? 'border-slate-800' : 'border-slate-200/60'}`}></div>
+                    <span className={`font-serif font-bold text-xl tracking-wider ${darkMode ? 'text-slate-200' : 'text-slate-800'}`}>
                       {project.title.split(' ')[0]}
                     </span>
                   </div>
                 </div>
 
                 <div className="space-y-3">
-                  <h3 className="text-2xl font-serif font-normal text-slate-900">{project.title}</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed font-light">{project.description}</p>
+                  <h3 className={`text-2xl font-serif font-normal ${darkMode ? 'text-white' : 'text-slate-900'}`}>{project.title}</h3>
+                  <p className={`text-sm leading-relaxed font-light ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>{project.description}</p>
                 </div>
               </div>
 
-              <div className="space-y-6 pt-4 border-t border-slate-200/60">
+              <div className={`space-y-6 pt-4 border-t ${darkMode ? 'border-slate-800' : 'border-slate-200/60'}`}>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tIdx) => (
-                    <span key={tIdx} className="text-xs font-mono px-3 py-1 bg-white/80 border border-slate-200/60 rounded text-slate-700">
+                    <span key={tIdx} className={`text-xs font-mono px-3 py-1 rounded border ${darkMode ? 'bg-slate-800/60 border-slate-700 text-slate-300' : 'bg-white/80 border-slate-200/60 text-slate-700'}`}>
                       {tag}
                     </span>
                   ))}
                 </div>
-                <a href={project.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-900 hover:text-blue-600 transition-colors">
+                <a href={project.link} target="_blank" rel="noreferrer" className={`inline-flex items-center gap-1.5 text-sm font-medium transition-colors ${darkMode ? 'text-slate-200 hover:text-blue-400' : 'text-slate-900 hover:text-blue-600'}`}>
                   {current.knowProject}
                 </a>
               </div>
@@ -431,51 +428,51 @@ export default function App() {
         </div>
       </section>
 
-      <div className="w-full px-8 md:px-16 max-w-[1600px] mx-auto"><hr className="border-slate-200" /></div>
+      <div className="w-full px-8 md:px-16 max-w-[1600px] mx-auto"><hr className={darkMode ? 'border-slate-800' : 'border-slate-200'} /></div>
 
       {/* Experiência & Pesquisa */}
       <section id="experiencia" className="w-full px-8 md:px-16 py-32 max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         <div className="lg:col-span-5 space-y-4">
-          <span className="text-xs font-mono tracking-widest text-blue-700">{current.sec3Tag}</span>
-          <h2 className="text-4xl sm:text-5xl font-serif text-slate-900 tracking-tight leading-tight">
+          <span className={`text-xs font-mono tracking-widest ${darkMode ? 'text-blue-400' : 'text-blue-700'}`}>{current.sec3Tag}</span>
+          <h2 className={`text-4xl sm:text-5xl font-serif tracking-tight leading-tight ${darkMode ? 'text-white' : 'text-slate-900'}`}>
             {current.sec3Title}
           </h2>
         </div>
 
         <div className="lg:col-span-7 space-y-6">
           {current.experiences.map((exp, idx) => (
-            <div key={idx} className="p-8 bg-white border border-slate-200/80 rounded-xl space-y-3 shadow-2xs">
+            <div key={idx} className={`p-8 border rounded-xl space-y-3 shadow-2xs ${darkMode ? 'bg-slate-900/40 border-slate-800' : 'bg-white border-slate-200/80'}`}>
               <div className="flex justify-between items-center">
                 <div className="flex items-center gap-3">
-                  <span className="text-xs font-mono px-2 py-0.5 bg-slate-100 rounded text-slate-600">{exp.id}</span>
-                  <h3 className="font-serif text-lg text-slate-900">{exp.company}</h3>
+                  <span className={`text-xs font-mono px-2 py-0.5 rounded ${darkMode ? 'bg-slate-800 text-slate-300' : 'bg-slate-100 text-slate-600'}`}>{exp.id}</span>
+                  <h3 className={`font-serif text-lg ${darkMode ? 'text-white' : 'text-slate-900'}`}>{exp.company}</h3>
                 </div>
-                <span className="text-xs font-mono text-slate-500">{exp.period}</span>
+                <span className="text-xs font-mono text-slate-400">{exp.period}</span>
               </div>
-              <div className="text-xs font-mono text-blue-700 font-medium">{exp.role}</div>
-              <p className="text-sm text-slate-600 font-light leading-relaxed">{exp.description}</p>
+              <div className={`text-xs font-mono font-medium ${darkMode ? 'text-blue-400' : 'text-blue-700'}`}>{exp.role}</div>
+              <p className={`text-sm font-light leading-relaxed ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>{exp.description}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <div className="w-full px-8 md:px-16 max-w-[1600px] mx-auto"><hr className="border-slate-200" /></div>
+      <div className="w-full px-8 md:px-16 max-w-[1600px] mx-auto"><hr className={darkMode ? 'border-slate-800' : 'border-slate-200'} /></div>
 
       {/* Certificações */}
       <section id="certificacoes" className="w-full px-8 md:px-16 py-32 max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         <div className="lg:col-span-5 space-y-4">
-          <span className="text-xs font-mono tracking-widest text-blue-700">{current.secCertsTag}</span>
-          <h2 className="text-4xl sm:text-5xl font-serif text-slate-900 tracking-tight leading-tight">
+          <span className={`text-xs font-mono tracking-widest ${darkMode ? 'text-blue-400' : 'text-blue-700'}`}>{current.secCertsTag}</span>
+          <h2 className={`text-4xl sm:text-5xl font-serif tracking-tight leading-tight ${darkMode ? 'text-white' : 'text-slate-900'}`}>
             {current.secCertsTitle}
           </h2>
         </div>
 
         <div className="lg:col-span-7 space-y-6">
           {current.certs.map((cert, idx) => (
-            <div key={idx} className="p-8 bg-white border border-slate-200/80 rounded-xl space-y-2 shadow-2xs">
-              <div className="text-xs font-mono text-blue-700 font-medium">{cert.issuer}</div>
-              <h3 className="font-serif text-lg text-slate-900">{cert.title}</h3>
-              <p className="text-sm text-slate-600 font-light leading-relaxed">{cert.description}</p>
+            <div key={idx} className={`p-8 border rounded-xl space-y-2 shadow-2xs ${darkMode ? 'bg-slate-900/40 border-slate-800' : 'bg-white border-slate-200/80'}`}>
+              <div className={`text-xs font-mono font-medium ${darkMode ? 'text-blue-400' : 'text-blue-700'}`}>{cert.issuer}</div>
+              <h3 className={`font-serif text-lg ${darkMode ? 'text-white' : 'text-slate-900'}`}>{cert.title}</h3>
+              <p className={`text-sm font-light leading-relaxed ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>{cert.description}</p>
             </div>
           ))}
         </div>
@@ -483,7 +480,7 @@ export default function App() {
 
       {/* Contact Footer Banner */}
       <section id="contato" className="w-full px-8 md:px-16 pb-20 max-w-[1600px] mx-auto">
-        <div className="bg-[#0B132B] text-white rounded-2xl p-12 sm:p-20 relative overflow-hidden flex flex-col lg:flex-row justify-between items-start lg:items-center gap-12 shadow-2xl border border-slate-800">
+        <div className={`rounded-2xl p-12 sm:p-20 relative overflow-hidden flex flex-col lg:flex-row justify-between items-start lg:items-center gap-12 shadow-2xl border ${darkMode ? 'bg-[#0B132B] border-slate-800 text-white' : 'bg-[#0B132B] border-slate-800 text-white'}`}>
           <div className="space-y-6 max-w-2xl z-10">
             <span className="text-xs font-mono tracking-widest text-blue-400">{current.sec4Tag}</span>
             <h2 className="text-4xl sm:text-6xl font-serif tracking-tight leading-tight">
@@ -507,9 +504,9 @@ export default function App() {
         </div>
 
         {/* Copyright & Scroll Top */}
-        <div className="max-w-[1600px] mx-auto pt-10 flex flex-col sm:flex-row justify-between items-center text-xs font-mono text-slate-500 gap-4 px-2">
+        <div className={`max-w-[1600px] mx-auto pt-10 flex flex-col sm:flex-row justify-between items-center text-xs font-mono gap-4 px-2 ${darkMode ? 'text-slate-500' : 'text-slate-500'}`}>
           <p>© {new Date().getFullYear()} FELIPE ALBUQUERQUE. {current.footerText}</p>
-          <button onClick={scrollToTop} className="hover:text-slate-900 transition-colors flex items-center gap-1">
+          <button onClick={scrollToTop} className={`transition-colors flex items-center gap-1 ${darkMode ? 'hover:text-white' : 'hover:text-slate-900'}`}>
             {current.scrollTop}
           </button>
         </div>
