@@ -5,24 +5,24 @@ export default function App() {
 
   const t = {
     PT: {
-      nav: { about: "Sobre", projects: "Projetos", experience: "Experiência", contact: "Contato" },
+      nav: { about: "Sobre", projects: "Projetos", experience: "Experiência", certs: "Certificações", contact: "Contato" },
       badge: "DISPONÍVEL PARA OPORTUNIDADES",
-      subtitle: "ENGENHARIA DE SOFTWARE · DADOS · INTELIGÊNCIA ARTIFICIAL",
+      subtitle: "CIÊNCIA DA COMPUTAÇÃO · DADOS · INTELIGÊNCIA ARTIFICIAL",
       heroTitleLine1: "Olá, eu sou",
       heroTitleName: "Felipe",
       heroTitleRest: "Albuquerque.",
-      heroDesc: "Graduando em Ciência da Computação na UFC, construindo produtos inteligentes na interseção entre dados, IA e software.",
+      heroDesc: "Graduando em Ciência da Computação pela UFC com sólida experiência em desenvolvimento Full-Stack, Engenharia de Dados e Machine Learning.",
       btnProjects: "Ver projetos",
       btnContact: "Entrar em contato",
       lab: "LABORATÓRIO DE SOFTWARE",
       loc1: "FORTALEZA, CEARÁ",
       loc2: "BRASIL",
-      sec1Title: "Tecnologia com rigor técnico e impacto real.",
-      sec1Desc: "Minha atuação combina engenharia de dados, aprendizado de máquina e desenvolvimento full-stack. Gosto de transformar problemas complexos em sistemas confiáveis, mensuráveis e preparados para escala.",
-      techTitle: "TECNOLOGIAS & FERRAMENTAS",
+      sec1Title: "Desenvolvimento de alta performance com rigor técnico.",
+      sec1Desc: "Atuação em projetos de alto impacto financeiro (BTG Pactual) e pesquisas avançadas em IoT e Inteligência Artificial (GREat/UFC, LSBD/Lenovo). Foco em transformar dados complexos em soluções escaláveis.",
+      techTitle: "STACK TECNOLÓGICA & FERRAMENTAS",
       sec2Tag: "02 / TRABALHO SELECIONADO",
       sec2Title: "Projetos em destaque",
-      sec2Desc: "Uma seleção de soluções aplicadas a dados, automação, IA e arquitetura distribuída.",
+      sec2Desc: "Soluções de engenharia aplicadas a dados, automação avançada, IA e arquiteturas distribuídas.",
       projects: [
         {
           id: "01",
@@ -38,7 +38,7 @@ export default function App() {
           id: "02",
           title: "MedQ Platform (IoHT)",
           subtitle: "Inteligência Artificial & Saúde",
-          description: "Plataforma distribuída para saúde conectada, integrando autenticação biométrica, mensageria assíncrona via RabbitMQ e modelos preditivos em XGBoost.",
+          description: "Pesquisa e desenvolvimento em Internet of Health Things (IoHT), integrando biometria, mensageria assíncrona via RabbitMQ e modelos preditivos em XGBoost.",
           tags: ["Python", "XGBoost", "RabbitMQ", "FastAPI"],
           bg: "bg-emerald-50/60 border-emerald-100",
           badgeBg: "bg-emerald-700 text-white",
@@ -66,57 +66,78 @@ export default function App() {
         }
       ],
       sec3Tag: "03 / EXPERIÊNCIA",
-      sec3Title: "Pesquisa e experiência profissional",
+      sec3Title: "Trajetória profissional e pesquisa",
       experiences: [
         {
           id: "01",
-          role: "Estagiário Summer Job (Automation, Data & AI)",
+          role: "Estagiário de Software / Dados (Summer Job)",
           company: "BTG Pactual",
-          period: "2026",
-          description: "Desenvolvimento de soluções orientadas a dados e automações, conectando necessidades de negócio a entregas técnicas eficientes."
+          period: "03/2026 – 07/2026",
+          description: "Desenvolvimento de modelos de IA e processamento de dados em larga escala com Pandas e PyTorch para o setor financeiro. Criação de fluxos de automação avançados com Playwright e AWS."
         },
         {
           id: "02",
           role: "Pesquisador Bolsista (Projeto IoLife / MedQ)",
           company: "GREat / Universidade Federal do Ceará",
-          period: "2025 – 2026",
-          description: "Pesquisa aplicada em Internet of Health Things, biometria e modelos de aprendizado de máquina para sistemas de saúde conectada."
+          period: "09/2025 – 08/2026",
+          description: "Pesquisa aplicada utilizando Python, TensorFlow, Metaflow e bibliotecas de Data Science para automação e melhoria da qualidade de vida conectada à IoT e LLMs."
         },
         {
           id: "03",
-          role: "Estagiário de Desenvolvimento Full-Stack (Projeto LTAD)",
-          company: "LSBD / Lenovo",
-          period: "2025",
-          description: "Manutenção e engenharia de software para dispositivos inteligentes utilizando C++, TypeScript e CSS."
+          role: "Bolsista Desenvolvedor Front-End (UFCode)",
+          company: "GREat / Universidade Federal do Ceará",
+          period: "04/2024 – 12/2024",
+          description: "Manutenção e criação de interfaces em React com JavaScript para plataforma gamificada de ensino de programação."
+        },
+        {
+          id: "04",
+          role: "Estagiário Full Stack (Projeto LTAD / Lenovo)",
+          company: "LSBD / UFC",
+          period: "03/2025 – 09/2025",
+          description: "Manutenção e engenharia de software para os dispositivos ThinkSmart Hub da Lenovo, atuando no Back-end e Front-end com TypeScript, CSS e C++[cite: 9, 10]."
         }
       ],
-      sec4Tag: "04 / CONTATO",
+      secCertsTag: "04 / CERTIFICAÇÕES",
+      secCertsTitle: "Formação complementar e certificações",
+      certs: [
+        {
+          title: "Fundamentals of Deep Learning",
+          issuer: "Nvidia",
+          description: "Capacitação oficial em Deep Learning com foco em PyTorch, TensorFlow e Python[cite: 10]."
+        },
+        {
+          title: "Formação Avançada em Desenvolvimento",
+          issuer: "Udemy & Cursos Especializados",
+          description: "Certificações em JavaScript/TypeScript Full-Stack, Programação Orientada a Objetos com Java e C++ Avançado."
+        }
+      ],
+      sec4Tag: "05 / CONTATO",
       sec4Title: "Vamos construir algo relevante juntos?",
-      sec4Desc: "Estou aberto a oportunidades em Engenharia de Software, Dados e Machine Learning. Se meu perfil fizer sentido para o seu time, vamos conversar.",
+      sec4Desc: "Aberto a oportunidades em Engenharia de Software, Engenharia de Dados e Machine Learning. Entre em contato para conversarmos sobre novos projetos.",
       btnEmail: "Enviar um e-mail",
       footerText: "PROJETADO E DESENVOLVIDO COM ATENÇÃO AOS DETALHES.",
       scrollTop: "VOLTAR AO TOPO ↑",
       knowProject: "Conhecer projeto ↗"
     },
     EN: {
-      nav: { about: "About", projects: "Projects", experience: "Experience", contact: "Contact" },
+      nav: { about: "About", projects: "Projects", experience: "Experience", certs: "Certifications", contact: "Contact" },
       badge: "AVAILABLE FOR OPPORTUNITIES",
-      subtitle: "SOFTWARE ENGINEERING · DATA · ARTIFICIAL INTELLIGENCE",
+      subtitle: "COMPUTER SCIENCE · DATA · ARTIFICIAL INTELLIGENCE",
       heroTitleLine1: "Hello, I am",
       heroTitleName: "Felipe",
       heroTitleRest: "Albuquerque.",
-      heroDesc: "Computer Science undergraduate at UFC, building intelligent products at the intersection of data, AI, and software.",
+      heroDesc: "Computer Science undergraduate at UFC with solid experience in Full-Stack Development, Data Engineering, and Machine Learning.",
       btnProjects: "View projects",
       btnContact: "Get in touch",
       lab: "SOFTWARE LAB",
       loc1: "FORTALEZA, CEARÁ",
       loc2: "BRAZIL",
-      sec1Title: "Technology with technical rigor and real impact.",
-      sec1Desc: "My work combines data engineering, machine learning, and full-stack development. I enjoy transforming complex problems into reliable, measurable, and scalable systems.",
-      techTitle: "TECHNOLOGIES & TOOLS",
+      sec1Title: "High-performance development with technical rigor.",
+      sec1Desc: "Experience in high-impact financial projects (BTG Pactual) and advanced IoT/AI research (GREat/UFC, LSBD/Lenovo). Focused on turning complex data into scalable solutions.",
+      techTitle: "TECH STACK & TOOLS",
       sec2Tag: "02 / FEATURED WORK",
       sec2Title: "Featured projects",
-      sec2Desc: "A selection of solutions applied to data, automation, AI, and distributed architecture.",
+      sec2Desc: "Engineering solutions applied to data, advanced automation, AI, and distributed architectures.",
       projects: [
         {
           id: "01",
@@ -132,7 +153,7 @@ export default function App() {
           id: "02",
           title: "MedQ Platform (IoHT)",
           subtitle: "Artificial Intelligence & Health",
-          description: "Distributed platform for connected health, integrating biometric authentication, asynchronous messaging via RabbitMQ, and XGBoost predictive models.",
+          description: "Research and development in Internet of Health Things (IoHT), integrating biometrics, asynchronous messaging via RabbitMQ, and XGBoost predictive models.",
           tags: ["Python", "XGBoost", "RabbitMQ", "FastAPI"],
           bg: "bg-emerald-50/60 border-emerald-100",
           badgeBg: "bg-emerald-700 text-white",
@@ -160,33 +181,54 @@ export default function App() {
         }
       ],
       sec3Tag: "03 / EXPERIENCE",
-      sec3Title: "Research and professional experience",
+      sec3Title: "Professional trajectory and research",
       experiences: [
         {
           id: "01",
-          role: "Summer Job Intern (Automation, Data & AI)",
+          role: "Software / Data Intern (Summer Job)",
           company: "BTG Pactual",
-          period: "2026",
-          description: "Development of data-driven solutions and automations, connecting business needs to efficient technical deliveries."
+          period: "03/2026 – 07/2026",
+          description: "Development of AI models and large-scale data processing with Pandas and PyTorch for the financial sector. Creation of advanced automation workflows using Playwright and AWS."
         },
         {
           id: "02",
           role: "Research Scholar (IoLife / MedQ Project)",
           company: "GREat / Federal University of Ceará",
-          period: "2025 – 2026",
-          description: "Applied research in Internet of Health Things, biometrics, and machine learning models for connected healthcare systems."
+          period: "09/2025 – 08/2026",
+          description: "Applied research using Python, TensorFlow, Metaflow, and Data Science libraries for automation and connected IoT/LLM healthcare systems."
         },
         {
           id: "03",
-          role: "Full-Stack Development Intern (LTAD Project)",
-          company: "LSBD / Lenovo",
-          period: "2025",
-          description: "Software maintenance and engineering for smart devices using C++, TypeScript, and CSS."
+          role: "Front-End Developer Scholar (UFCode)",
+          company: "GREat / Federal University of Ceará",
+          period: "04/2024 – 12/2024",
+          description: "Maintenance and creation of React and JavaScript interfaces for a gamified programming education platform."
+        },
+        {
+          id: "04",
+          role: "Full Stack Intern (LTAD Project / Lenovo)",
+          company: "LSBD / UFC",
+          period: "03/2025 – 09/2025",
+          description: "Software maintenance and engineering for Lenovo ThinkSmart Hub devices, working on both Back-end and Front-end using TypeScript, CSS, and C++[cite: 9, 10]."
         }
       ],
-      sec4Tag: "04 / CONTACT",
+      secCertsTag: "04 / CERTIFICATIONS",
+      secCertsTitle: "Complementary background and certifications",
+      certs: [
+        {
+          title: "Fundamentals of Deep Learning",
+          issuer: "Nvidia",
+          description: "Official Deep Learning certification focused on PyTorch, TensorFlow, and Python[cite: 10]."
+        },
+        {
+          title: "Advanced Development Training",
+          issuer: "Udemy & Specialized Courses",
+          description: "Certifications in JavaScript/TypeScript Full-Stack, Object-Oriented Programming with Java, and Advanced C++."
+        }
+      ],
+      sec4Tag: "05 / CONTACT",
       sec4Title: "Let's build something relevant together?",
-      sec4Desc: "I am open to opportunities in Software Engineering, Data, and Machine Learning. If my profile fits your team, let's talk.",
+      sec4Desc: "Open to opportunities in Software Engineering, Data Engineering, and Machine Learning. Get in touch to discuss new projects.",
       btnEmail: "Send an email",
       footerText: "DESIGNED AND DEVELOPED WITH ATTENTION TO DETAIL.",
       scrollTop: "BACK TO TOP ↑",
@@ -198,7 +240,7 @@ export default function App() {
 
   const skills = [
     "Python", "PyTorch", "FastAPI", "React", "TypeScript", 
-    "AWS", "Docker", "PostgreSQL", "RabbitMQ", "Git"
+    "AWS", "Docker", "PostgreSQL", "RabbitMQ", "Git", "TensorFlow", "Pandas"
   ];
 
   const scrollToTop = () => {
@@ -223,6 +265,7 @@ export default function App() {
             <a href="#sobre" className="hover:text-slate-950 transition-colors">{current.nav.about}</a>
             <a href="#projetos" className="hover:text-slate-950 transition-colors">{current.nav.projects}</a>
             <a href="#experiencia" className="hover:text-slate-950 transition-colors">{current.nav.experience}</a>
+            <a href="#certificacoes" className="hover:text-slate-950 transition-colors">{current.nav.certs}</a>
             <a href="#contato" className="hover:text-slate-950 transition-colors">{current.nav.contact}</a>
           </nav>
 
@@ -411,6 +454,28 @@ export default function App() {
               </div>
               <div className="text-xs font-mono text-blue-700 font-medium">{exp.role}</div>
               <p className="text-sm text-slate-600 font-light leading-relaxed">{exp.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <div className="w-full px-8 md:px-16 max-w-[1600px] mx-auto"><hr className="border-slate-200" /></div>
+
+      {/* Certificações */}
+      <section id="certificacoes" className="w-full px-8 md:px-16 py-32 max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        <div className="lg:col-span-5 space-y-4">
+          <span className="text-xs font-mono tracking-widest text-blue-700">{current.secCertsTag}</span>
+          <h2 className="text-4xl sm:text-5xl font-serif text-slate-900 tracking-tight leading-tight">
+            {current.secCertsTitle}
+          </h2>
+        </div>
+
+        <div className="lg:col-span-7 space-y-6">
+          {current.certs.map((cert, idx) => (
+            <div key={idx} className="p-8 bg-white border border-slate-200/80 rounded-xl space-y-2 shadow-2xs">
+              <div className="text-xs font-mono text-blue-700 font-medium">{cert.issuer}</div>
+              <h3 className="font-serif text-lg text-slate-900">{cert.title}</h3>
+              <p className="text-sm text-slate-600 font-light leading-relaxed">{cert.description}</p>
             </div>
           ))}
         </div>
