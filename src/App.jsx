@@ -42,7 +42,7 @@ export default function App() {
           tags: ["Python", "XGBoost", "RabbitMQ", "FastAPI"],
           bg: "bg-emerald-50/60 border-emerald-100",
           badgeBg: "bg-emerald-700 text-white",
-          link: "https://github.com/felipe-albuquerque"
+          link: "https://github.com/feliperegesde"
         },
         {
           id: "03",
